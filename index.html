@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>わくわく的当てゲーム</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="game">
+    <h1>🎯 わくわく的当てゲーム 🎯</h1>
+    <p class="instruction">エンターキーを押してね！<br>1回目：的が回る　→　2回目：的を射る！</p>
+
+    <section class="stage">
+      <div id="target" class="target" aria-label="的">
+        <div class="slice hit">当り</div>
+        <div class="slice anju">あんじゅ</div>
+        <div class="slice saya">さや</div>
+        <div class="slice kengo">けんご</div>
+        <div class="slice junichi">じゅんいち</div>
+        <div class="bullseye">🎯</div>
+      </div>
+      <div id="arrow" class="arrow" aria-hidden="true">➶</div>
+    </section>
+
+    <div id="message" class="message" aria-live="assertive">エンターキーでスタート！</div>
+    <button id="startButton" class="start-button">エンターでスタート</button>
+    <p id="status" class="status">準備OK！</p>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
